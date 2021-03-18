@@ -11,7 +11,7 @@ import java.util.List;
 public class ChallengeController {
 
     @GetMapping(value = "{challengeId}/lessons")
-    public LessonsDTO getLessons(@PathVariable("challengeId") String challengeId) {
+    public LessonsDTO getChallengeLessons(@PathVariable("challengeId") String challengeId) {
         return new LessonsDTO(List.of(new LessonDTO("some title")));
     }
 }
